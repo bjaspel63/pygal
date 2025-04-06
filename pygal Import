@@ -1,0 +1,15 @@
+import pygal
+
+chart = pygal.Bar()
+chart.title = "2023 World Population"
+chart.x_labels = ["2023"]
+
+with open('population.txt') as f: #open the file
+  for pop in f:
+    data = pop.split(",")  #split the data
+   
+    x = data[0]   #country name
+    y = data[1] #population
+    chart.add(x, int(y))  #add data to chart
+
+chart.render()
