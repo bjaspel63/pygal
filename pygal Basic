@@ -1,13 +1,15 @@
-import pygal      #python library
+import pygal #library
 
-pie_chart = pygal.Pie()    #type of chart
-pie_chart.title = "Most Visited Website of 2023"  #title
-pie_chart.x_labels = ['2023']
+pie_chart1 = pygal.Line()   #type of chart
+pie_chart1.title = "Most visted website of 2021-2023"   #title
+pie_chart1.x_labels =['2021','2022','2023']
 
-pie_chart.add("Google", 177.8)   #add data
-pie_chart.add("Youtube", 117.3)
-pie_chart.add("Facebook", 18.7)
-pie_chart.add("X", 8.5)
-pie_chart.add("Wikipedia", 18.4)
+pie_chart1.add("google", [156.7, 168.6, 177.8])    #add data
+pie_chart1.add("youtube", [110.5, 112.9, 117.3])    #add data
+pie_chart1.add("Facebook", [16.3, 17.6, 18.7])    #add data
+pie_chart1.add("X", [8.8, 9.1, 8.5])    #add data
+pie_chart1.add("wikipedia", [11.5, 9.0, 8.4])    #add data
 
-pie_chart.render()        #show chart
+pie_chart1.render_to_file('img.svg')
+pie_chart1.render_in_browser()  #output shown in the browser
+
