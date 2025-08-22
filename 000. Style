@@ -1,0 +1,10 @@
+import pygal
+
+from pygal.style import Style
+custom_style = Style(colors=('#FF0000', '#00FF00', '#0000FF'))
+
+bar = pygal.Bar(style=custom_style)
+bar.add('A', [1,2,3])
+bar.add('B', [3,2,1])
+bar.render_to_file('styled_bar.svg')
+
