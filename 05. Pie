@@ -1,0 +1,10 @@
+import pygal
+
+pie = pygal.Pie()
+pie.title = 'Pie Example'
+pie.add('Study', 6)
+pie.add('Sleep', 8)
+pie.add('Play', 4)
+pie.add('Other', 6)
+
+pie.render()
