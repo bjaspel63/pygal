@@ -1,0 +1,9 @@
+import pygal
+
+radar = pygal.Radar()
+radar.title = 'Skills Radar'
+radar.x_labels = ['Math', 'Science', 'English', 'Sports']
+radar.add('Alice', [80, 90, 85, 70])
+radar.add('Bob', [70, 60, 75, 95])
+
+radar.render()
