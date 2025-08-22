@@ -1,0 +1,9 @@
+import pygal
+
+hbar = pygal.HorizontalBar()
+hbar.title = 'Horizontal Bar'
+hbar.add('Apples', 50)
+hbar.add('Oranges', 30)
+hbar.add('Bananas', 20)
+
+hbar.render()
