@@ -1,0 +1,9 @@
+import pygal
+
+from pygal.maps.world import World
+
+worldmap = World()
+worldmap.title = 'Population Example'
+worldmap.add('Asia', [('cn', 1300), ('in', 1100), ('jp', 127)])
+worldmap.add('Europe', [('fr', 64), ('de', 82), ('uk', 61)])
+worldmap.render_to_file('worldmap.svg')
