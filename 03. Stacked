@@ -1,0 +1,8 @@
+import pygal
+
+stacked_bar = pygal.StackedBar()
+stacked_bar.title = 'Stacked Bar'
+stacked_bar.x_labels = ['Q1', 'Q2', 'Q3', 'Q4']
+stacked_bar.add('Product A', [2, 4, 6, 8])
+stacked_bar.add('Product B', [5, 3, 7, 2])
+stacked_bar.render()
