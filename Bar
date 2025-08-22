@@ -1,0 +1,8 @@
+import pygal
+
+bar = pygal.Bar()
+bar.title = 'Bar Chart Example'
+bar.x_labels = ['Math', 'Science', 'English']
+bar.add('Class A', [85, 90, 88])
+bar.add('Class B', [80, 70, 95])
+bar.render()
